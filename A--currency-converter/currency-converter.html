@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator GBP</title>
+    <link href="img/L.png" rel="icon" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/calc.css" rel="stylesheet" />
+    <link href="css/js-form.css" rel="stylesheet" />
+    <link href="css/js-input.css" rel="stylesheet" />
+    <link href="css/js-result.css" rel="stylesheet" />
+    <script src="js/calculator.js" defer></script>
+  </head>
+
+  <body class="">
+    <p class="calc">Policz ile będziesz miał złotych !</p>
+    <form class="js-form">
+      <fieldset>
+        <legend class="js-form">Kalkulator GBP/PLN</legend>
+        <p>
+          GBP
+          <input class="js-input" type="number" min="1" step="any" required />
+        </p>
+      </fieldset>
+      <p>
+        <button class="calc__button"><strong>Przelicz</strong></button>
+      </p>
+      <p>
+        <button type="reset" class="calc__button calc__button--reset">
+          <strong>Wyczyść</strong>
+        </button>
+      </p>
+    </form>
+    <p class="js-result">
+      Wynik: <strong class="js-result--2">N/A </strong> zł
+    </p>
+  </body>
+</html>
