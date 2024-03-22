@@ -1,19 +1,26 @@
 {
-  let inputElement = document.querySelector(".js-input");
-  let formElement = document.querySelector(".js-form");
-  let resultElement = document.querySelector(".js-result--2");
+  const formElement = document.querySelector(".js-form");
+  const resultElement = document.querySelector(".js-result--2");
 
-  formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+  const calculateResult = () => {
+    formElement.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-    let input = inputElement.value;
+      const inputElement = document.querySelector(".js-input");
+      const input = inputElement.value;
+      const result = input * 5.21;
 
-    let result = input * 5.21;
+      resultElement.innerText = result.toFixed(2);
+    });
+  };
 
-    resultElement.innerText = result.toFixed(2);
-  });
+  calculateResult();
 
-  formElement.addEventListener("reset", (event) => {
-    resultElement.innerText = "N/A";
-  });
+  const resetForm = () => {
+    formElement.addEventListener("reset", (event) => {
+      resultElement.innerText = "N/A";
+    });
+  };
+
+  resetForm();
 }
