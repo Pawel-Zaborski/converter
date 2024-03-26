@@ -6,7 +6,7 @@ to calculate needed amount.
 
 ## Demo
 
-https://pawel-zaborski.github.io/currency-converter/
+https://pawel-zaborski.github.io/currency-converter/index.html
 
 ## Manual
 
